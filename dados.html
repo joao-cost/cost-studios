@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRM - Banco de Dados</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/dados.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <h3><span id="icone-menu" class="material-symbols-outlined">menu</span>Projeto <span>CRM</span></h3>
+            <nav>
+                <a href='index.html'>Home</a>
+                <a href='cadastro.html'>Cadastro</a>
+                <a href='dados.html'>Banco de Dados</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <select name="status" id="status">
+            <option selected value="Pre-contato">Pre-Contato</option>
+            <option value="Contato">Contato</option>
+            <option value="Reuniao">Reuniao</option>
+            <option value="Ativo">Ativo</option>
+            <option value="Perdido">Perdido</option>
+        </select>
+
+        <h1>Banco de Dados</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome da Empresa</th>
+                    <th>Proprietário</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id='dados'>
+                <tr>
+                    <td>Cost Studios</td>
+                    <td>João Vitor</td>
+                    <td>(11) 99999-9999</td>
+                    <td>João@123.com</td>
+                    <td>Ativo</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div>
+            <h4>Cost <span>Studios</span>&copy; 2024</h4>
+            <p>Criando o futuro com soluções criativas!</p>
+        </div>
+        <div class="barra-vertical"></div> <!-- Barra vertical -->
+        <nav>
+            <ul>
+                <p>Site desenvolvido pela Cost Studios</p>
+                <p>Todos os direitos reservados</p>
+                <a href="politica-privacidade.html">Política de Privacidade</a>
+            </ul>
+        </nav>
+    </footer>
+    <script src='./js/main.js'></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRM - Cadastro de Usuário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/cadastro.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <h3><span id="icone-menu" class="material-symbols-outlined">menu</span>Projeto <span>CRM</span></h3>
+            <nav>
+                <a href='index.html'>Home</a>
+                <a href='cadastro.html'>Cadastro</a>
+                <a href='dados.html'>Banco de Dados</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="cadastro">
+            <div id="info">
+                <h1>Cadastro de Cliente</h1>
+                <p>Preencha os campos abaixo para cadastrar um novo cliente.</p>
+                <!-- Intruções -->
+                <h3>Nome da Empresa</h3>
+                <p>Registre o nome da empresa;</p>
+                <h3>Proprietário</h3>
+                <p>Registre o nome do proprietário da empresa;</p>
+                <h3>Telefone</h3>
+                <p>Registre o telefone da empresa;</p>
+                <h3>E-mail</h3>
+                <p>Registre o e-mail da empresa;</p>
+                <div id="info-system"><p id="system">Error 404 !!</p></div>
+            </div>
+            <form action="" id="form-cadastro">
+                <input type="text" name = "nomeEmpresa" id= "nomeEmpresa" placeholder="Nome da Empresa" required>
+                <input type="text" name = "nomeProprietario" id= "nomeProprietario" placeholder="Proprietário" required>
+                <input type="tel" name = "telefone" id = "telefone"  placeholder="Telefone" required>
+                <input type="mail" name = "email" id = "email" placeholder="Email" required>
+                <button>Salvar Cliente</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h4>Cost <span>Studios</span>&copy; 2024</h4>
+            <p>Criando o futuro com soluções criativas!</p>
+        </div>
+        <div class="barra-vertical"></div> <!-- Barra vertical -->
+        <nav>
+            <ul>
+                <p>Site desenvolvido pela Cost Studios</p>
+                <p>Todos os direitos reservados</p>
+                <a href="politica-privacidade.html">Política de Privacidade</a>
+            </ul>
+        </nav>
+    </footer>
+    <script src='./js/cadastro.js'></script>
+</body>
+</html>

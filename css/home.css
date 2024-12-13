@@ -1,0 +1,48 @@
+/* CSS HEX */
+--var {
+    --azul1: #007BFF ;
+    --azul2: #0056B3 ;
+    --branco: #F4F6F8 ;
+    --verde: #28FFBF;
+    --cinza: #343A40 ;
+    --cinza: #f8f9fa;
+}
+
+main {
+    margin: auto;
+    width: 80vw;
+    height: 78vh;
+    padding: 20px;
+    text-align: center;
+    border: #007BFF 2px solid;
+
+}
+.duas-colunas {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    border: #003fec 2px solid;
+}
+aside {
+    width: 40%;
+    height: auto;
+    border: #003fec 2px solid;
+}
+img {
+    width: 400px;
+    height: auto;
+}
+
+#equipe {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    border: #003fec 2px solid;
+}
+#equipe img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: #003fec 2px solid;
+}

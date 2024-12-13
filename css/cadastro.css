@@ -1,0 +1,62 @@
+main {
+    padding: 20px;
+    text-align: center;
+    border: #007BFF 2px solid;
+}
+#form-cadastro {
+    background-color: #f8f9fa;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: #007BFF 2px solid;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+#form-cadastro input,
+#form-cadastro select,
+#form-cadastro button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#form-cadastro input::placeholder {
+    color: #bbb;
+}
+
+#form-cadastro input:focus,
+#form-cadastro select:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px #007BFF;
+}
+
+#form-cadastro select {
+    background-color: #fff;
+}
+
+#form-cadastro button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form-cadastro button:hover {
+    background-color: #28FFBF;
+}
+
+#form-cadastro button:active {
+    background-color: #6F42C1;
+}
+
+#cadastro {
+    display: flex;
+}

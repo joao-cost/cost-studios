@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+--var {
+    --azul1: #007BFF ;
+    --azul2: #0056B3 ;
+    --branco: #F4F6F8 ;
+    --cinza: #343A40 ;
+    --cinza: #f8f9fa;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F6F8;
+    /* background-image: linear-gradient(120deg, #f8f9fa, #007BFF); */
+}
+/* ------------------------------------------------------------------------------------ */
+header {
+    background-color: #0056B3;
+    height: 80px;
+    border-radius: 0 0 15px 15px; /* Bordas inferiores arredondadas */
+    position: relative;
+}
+div#menu {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px; /* Adiciona bordas arredondadas ao menu */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+    display: flex;
+    background-color: #007BFF;
+    justify-content: space-evenly; /* Espaço entre os itens */
+}
+div#menu h3 {
+    display: flex;
+    padding: 13px;
+    color: #EDEDED;
+    font-size: 1.25rem;
+}
+div#menu span {
+    color: #28FFBF;
+}
+nav {
+    display: flex;
+    align-items: center; /* Centraliza os itens na vertical */
+}
+nav > a {
+    padding: 15px;
+    color: #EDEDED;
+    text-decoration: none;
+    
+}
+nav > a:hover {
+    background-color: #28FFBF;
+    color: #1C1C1C;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav > a:active {
+    color: #007BFF;
+}
+@media (max-width: 768px) {
+    span#icone-menu {
+        margin-right: 25px;
+        display: block;
+    }
+    div#menu {
+        border-radius: 10px 10px 10px 0px;
+    }
+    div nav {
+        position: absolute;
+        transition: 0.5s;
+        left: -250px;
+        height: 500px;
+        width: 250px;
+        background-color: #007BFF;
+        top: 50px;
+        flex-direction: column;
+        border-radius: 0 0 10px 10px;
+    }
+    h3:hover + nav, nav:hover {
+        left: 0;
+        transition: 0.5s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+    }
+    div nav a {
+        background-color: #0056B3;
+        padding: 15px;
+        margin-top: 10px;
+        text-align: center;
+        width: 180px;
+        border-bottom: 1px solid #EDEDED;
+        border-radius: 10px;
+        align-items: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+    }
+    div nav a:hover {
+        border-bottom: none;
+        transform: scale(1.05);
+    }
+}
+@media (min-width: 768px) {
+    span#icone-menu {
+        display: none;
+    }
+}
+
+/* ------------------------------------------------------------------------------------ Corpo do Site*/
+/* Estilização do conteúdo principal */
+
+
+/* ------------------------------------------------------------------------------------ Rodapé */
+footer {
+    padding: 15px;
+    background-color: #007BFF; /* Cor de fundo do footer */
+    color: #EDEDED; /* Cor do texto */
+    height: auto; /* Altura ajustada automaticamente */
+    border-radius: 15px 15px 0 0; /* Bordas superiores arredondadas */
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2); /* Sombra superior */
+    display: flex;
+    justify-content: center; 
+    align-items: center; /* Centraliza verticalmente o conteúdo principal */
+}
+footer div {
+    margin-right: 30px;
+}
+footer div h4 {
+    font-size: 1.5rem;
+    color: #EDEDED;
+    margin: 0;
+}
+footer div h4 span {
+    color: #28FFBF; /* Destaque para "Tech" */
+}
+footer div p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #F8F9FA; /* Branco gelo */
+}
+footer div.barra-vertical {
+    width: 3px;
+    height: 60px; /* Altura da barra */
+    background-color: #EDEDED; /* Cor da barra */
+}
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
+footer nav a, footer nav p {
+    color: #EDEDED; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+footer nav a:hover {
+    color: #28FFBF; /* Cor de destaque no hover */
+}
+/* ------------------------------------------------------------------------------------ */
+/* Estilização pra rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    height: 10px; /* Altura da barra (para rolagem horizontal) */
+}
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+    background: #0056B3; /* Cinza escuro */
+    border-radius: 0; /* Cantos arredondados */
+}
+/* Polegar (parte que arrasta) */
+::-webkit-scrollbar-thumb {
+    background: #0056B3; /* Roxo vibrante */
+    border-radius: 5px;
+    border: 2px solid #f8f9fa; /* Espaço ao redor do polegar */
+}
+/* Polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #007BFF; /* Azul elétrico ao passar o mouse */
+}
+/* ------------------------------------------------------------------------------------ */
