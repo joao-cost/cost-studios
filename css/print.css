@@ -1,0 +1,74 @@
+/* Estilo geral da impressão */
+@media print {
+    /* Esconder o menu de navegação, o botão de imprimir e o rodapé */
+    header, footer, #print {
+        display: none !important;
+    }
+
+    /* Estilo da tabela de impressão */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff; /* Fundo branco puro */
+        color: #000000; /* Texto preto */
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    thead th {
+        background-color: #007BFF;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    tbody td {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f4f4f9;
+    }
+
+    tr:hover {
+        background-color: #007BFF99 !important;
+        color: #fff !important;
+    }
+
+    table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    /* Remover qualquer efeito de transição */
+    * {
+        transition: none !important;
+    }
+
+    /* Estilo das bordas */
+    th, td {
+        border: 1px solid #000 !important;
+    }
+
+    /* Ocultar a última coluna (Status) da tabela */
+    th:last-child, 
+    td:last-child {
+        display: none !important;
+    }
+}

@@ -4,33 +4,38 @@
     box-sizing: border-box;
 }
 --var {
-    --azul1: #007BFF ;
-    --azul2: #0056B3 ;
-    --branco: #F4F6F8 ;
-    --cinza: #343A40 ;
+    --azul1: #007BFF;
+    --azul2: #0056B3;
+    --branco: #F4F6F8;
+    --verde: #28FFBF;
+    --cinza: #343A40;
     --cinza: #f8f9fa;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #F4F6F8;
-    /* background-image: linear-gradient(120deg, #f8f9fa, #007BFF); */
+    background-image: linear-gradient(0deg, #f8f9fa 50%, #c7e2ff 100%);
 }
 /* ------------------------------------------------------------------------------------ */
 header {
     background-color: #0056B3;
     height: 80px;
     border-radius: 0 0 15px 15px; /* Bordas inferiores arredondadas */
-    position: relative;
+    /* position: relative; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 div#menu {
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-radius: 10px; /* Adiciona bordas arredondadas ao menu */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+    border-radius: 0px; /* Adiciona bordas arredondadas ao menu */
+    box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
     display: flex;
     background-color: #007BFF;
-    justify-content: space-evenly; /* Espaço entre os itens */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    padding: 0 150px 0 100px;
 }
 div#menu h3 {
     display: flex;
@@ -114,10 +119,11 @@ nav > a:active {
 /* ------------------------------------------------------------------------------------ Rodapé */
 footer {
     padding: 15px;
-    background-color: #007BFF; /* Cor de fundo do footer */
+    background-color: #0056B3; /* Cor de fundo do footer */
+    background: radial-gradient(circle, #0056B3 50%, #007BFF 100%);
     color: #EDEDED; /* Cor do texto */
     height: auto; /* Altura ajustada automaticamente */
-    border-radius: 15px 15px 0 0; /* Bordas superiores arredondadas */
+    /* border-radius: 0; Bordas superiores arredondadas */
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2); /* Sombra superior */
     display: flex;
     justify-content: center; 

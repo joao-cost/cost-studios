@@ -1,0 +1,209 @@
+/* =========================
+   Paleta de Cores e Variáveis Globais
+========================= */
+:root {
+    --azul1: #007bff;
+    --azul2: #0056b3;
+    --branco: #f4f6f8;
+    --verde: #28ffbf;
+    --cinza-claro: #f8f9fa;
+    --cinza-escuro: #343a40;
+    --preto-suave: #212529;
+  }
+  
+  /* =========================
+     Estilo Geral
+  ========================= */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--cinza-claro);
+    color: var(--preto-suave);
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* =========================
+     Títulos e Cabeçalhos
+  ========================= */
+  main h1, main h2, main h3 {
+    color: var(--azul1);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  main h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  main h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* =========================
+     Parágrafos e Texto
+  ========================= */
+  main p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  main span {
+    color: var(--verde);
+    font-weight: bold;
+  }
+  
+  /* =========================
+     Seções
+  ========================= */
+  section {
+    margin-bottom: 30px;
+  }
+  
+  /* =========================
+     Listas
+  ========================= */
+  ul, ol {
+    margin: 20px 0;
+    padding-left: 40px;
+  }
+  
+  ul li, ol li {
+    margin-bottom: 10px;
+  }
+  
+  /* =========================
+     Links
+  ========================= */
+  a {
+    color: var(--azul1);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: var(--azul2);
+    text-decoration: underline;
+  }
+  
+  /* =========================
+     Botões
+  ========================= */
+  button {
+    background-color: var(--azul1);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--azul2);
+  }
+  
+  /* =========================
+     Caixas de Aviso e Destaque
+  ========================= */
+  .alerta {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  .alerta-sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 6px solid #28a745;
+  }
+  
+  .alerta-erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 6px solid #dc3545;
+  }
+  
+  .alerta-info {
+    background-color: #cce5ff;
+    color: #004085;
+    border-left: 6px solid #007bff;
+  }
+  
+  /* =========================
+     Rodapé
+  ========================= */
+  footer {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: var(--verde);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: var(--branco);
+    text-decoration: underline;
+  }
+  
+  /* =========================
+     Animações e Efeitos
+  ========================= */
+  .fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* =========================
+     Media Queries (Responsividade)
+  ========================= */
+  @media (max-width: 768px) {
+    main {
+      padding: 15px;
+    }
+  
+    main h1 {
+      font-size: 2rem;
+    }
+  
+    main h2 {
+      font-size: 1.8rem;
+    }
+  
+    main p {
+      font-size: 1rem;
+    }
+  }
+  
